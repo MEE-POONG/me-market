@@ -1,0 +1,171 @@
+.news-page {
+    .discover-items {
+        background-image: url("/images/dark-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 120px 0px 120px 0px;
+        position: relative;
+      
+        .section-heading {
+          text-align: left;
+      
+          .line-dec {
+            margin-left: 0;
+          }
+        }
+      
+        #search-form {
+          margin-top: 15px;
+          .row{
+            justify-content: flex-end;
+          }
+      
+          input {
+            width: 100%;
+            height: 46px;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 23px;
+            background-color: transparent;
+            padding: 0px 15px;
+            font-size: 14px;
+            color: #fff;
+          }
+      
+          select {
+            width: 100%;
+            height: 46px;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 23px;
+            background-color: transparent;
+            padding: 0px 15px;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+      
+            option {
+              background-color: #2a2a2a;
+            }
+          }
+      
+          input::placeholder,
+          select::placeholder {
+            color: #fff;
+          }
+      
+          button {
+            font-size: 14px;
+            color: #fff;
+            background-color: #7453fc;
+            border: 1px solid #7453fc;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            border-radius: 25px;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+      
+            &:after {
+              width: 78%;
+              height: 2px;
+              background-color: #fff;
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+            }
+      
+            &:hover {
+              background-color: #fff;
+              color: #7453fc;
+              border: 1px solid #fff;
+            }
+          }
+        }
+      
+        .item {
+          span {
+            &.banner {
+              font-size: 15px;
+              background-color: #7453fc;
+              color: #fff;
+              font-weight: 500;
+              padding: 5px 15px;
+              display: inline-block;
+              position: absolute;
+              border-radius: 16px;
+              left: 50%;
+              transform: translateX(-50%);
+              top: -16px;
+            }
+      
+            &.author {
+              display: inline-flex;
+              width: 100%;
+      
+              img {
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+              }
+            }
+          }
+      
+          img {
+            position: relative;
+            z-index: 1;
+            object-fit: cover;
+            border-radius: 20px;
+            height: 300px;
+          }
+      
+          h4 {
+            font-size: 20px;
+            margin-top: 30px;
+          }
+      
+          .line-dec {
+            width: 100%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 30px 0px;
+          }
+      
+          background-color: #282b2f;
+          border: 1px solid #404245;
+          padding: 30px;
+          border-radius: 20px;
+          position: relative;
+          margin-bottom: 52px;
+      
+          span {
+            color: #fff;
+            display: inline-block;
+            font-size: 15px;
+      
+            strong {
+              font-size: 20px;
+            }
+      
+            &.category {
+              text-align: right;
+            }
+          }
+      
+          .main-button {
+            margin-top: 20px;
+            margin-bottom: -60px;
+            text-align: center;
+          }
+        }
+      }
+}

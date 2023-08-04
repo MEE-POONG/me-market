@@ -1,0 +1,278 @@
+.about-page {
+
+    .item-details-page {
+        &:after {
+            background-image: url("/images/category-collection-dec.png");
+            width: 300px;
+            height: 282px;
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            content: "";
+            z-index: 1;
+        }
+
+        .left-image {
+            margin-right: 30px;
+
+            p {
+                font-size: 24px;
+                color: #7453fc;
+                background-image: linear-gradient(to right, rgb(165, 180, 252), rgb(192, 132, 252));
+                font-weight: 700;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        h4 {
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        span.author {
+            display: flex;
+            margin-bottom: 30px;
+
+            img {
+                margin-right: 15px;
+            }
+
+            h6 {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+
+            a {
+                color: #7453fc;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-indent: 30px;
+        }
+
+        span {
+            color: #fff;
+            display: inline-block;
+            font-size: 15px;
+
+            strong {
+                font-size: 20px;
+                color: #7453fc;
+            }
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+        }
+
+        span {
+            &.bid,
+            &.owner,
+            &.ends {
+                line-height: 35px;
+                position: relative;
+                z-index: 2;
+            }
+
+            &.bid em,
+            &.ends em,
+            &.owner em {
+                font-style: normal;
+                color: #afafaf;
+            }
+            &.owner a {
+                color: #f7f7f7;
+            }
+        }
+
+        form {
+            margin-top: 40px;
+
+            label {
+                color: #afafaf;
+                font-size: 15px;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+
+            input {
+                width: 100px;
+                height: 46px;
+                border: 1px solid #7453fc;
+                outline: none;
+                border-radius: 23px;
+                background-color: transparent;
+                color: #fff;
+                text-align: center;
+                margin-right: 15px;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        button {
+            font-size: 14px;
+            color: #fff;
+            background-color: #7453fc;
+            border: 1px solid #7453fc;
+            padding: 12px 30px;
+            display: inline-block;
+            border-radius: 25px;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                width: 50%;
+                height: 2px;
+                background-color: #fff;
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: #7453fc;
+                border: 1px solid #fff;
+            }
+        }
+    }
+    .current-bid {
+        margin-top: 120px;
+
+        select {
+            float: right;
+            width: 150px;
+            background-color: transparent;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .mini-heading {
+            * {
+                text-align: center;
+                display: inline-block;
+                font-size: 1rem;
+                padding: 10px 20px;
+                color: #ffffff;
+                border: 1px solid #7453fc;
+            }
+            .title {
+                background-color: #7453fc;
+                border-radius: 25px 0px 0px 25px;
+            }
+            .select {
+                &.last {
+                    border-radius: 0 25px 25px 0;
+                }
+                &.active {
+                    background-color: #7453fc;
+                }
+            }
+        }
+        .item {
+            position: relative;
+            z-index: 2;
+            margin-top: 30px;
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #282b2f;
+            border: 1px solid #7453fc;
+            max-height: 220px;
+            height: 250px;
+
+            .left-img {
+                flex-basis: 80%;
+                display: inline-flex;
+            }
+
+            .right-content {
+                padding: 15px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                }
+
+                a {
+                    font-size: 15px;
+                    color: #7453fc;
+                    font-weight: 700;
+                }
+
+                .line-dec {
+                    width: 100%;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    margin: 5px 0px;
+                }
+
+                h6 {
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+
+                    em {
+                        font-size: 18px;
+                        color: #7453fc;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
+                }
+
+                span.date {
+                    display: flex;
+                    font-size: 10px;
+                    color: #ffffff;
+                    justify-content: space-around;
+                    &:hover {
+                        color: #7453fc;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .item-details-page {
+            .left-image {
+                margin-right: 0;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .current-bid {
+            .mini-heading {
+                * {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        .current-bid .item .right-content h6 em {
+            font-size: 14px;
+        }
+    }
+}
