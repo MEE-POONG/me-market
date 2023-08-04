@@ -12,7 +12,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const TheLayOut: React.FC<LayoutProps> = ({ children }) => {
+const TheLayout: React.FC<LayoutProps> = ({ children }) => {
   const router = useRouter();
 
   return (
@@ -27,4 +27,4 @@ const TheLayOut: React.FC<LayoutProps> = ({ children }) => {
   );
 };
 
-export default TheLayOut;
+export default TheLayout;

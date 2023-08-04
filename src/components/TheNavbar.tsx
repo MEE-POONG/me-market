@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaBars } from 'react-icons/fa';
+// import { FaBars } from 'react-icons/fa';
 
 const TheNavber: React.FC = () => {
   const router = useRouter();
@@ -37,7 +37,7 @@ const TheNavber: React.FC = () => {
             <span className='w-100 d-none d-md-block'>Me Prompt Technology</span>
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" >
-            <FaBars />
+            {/* <FaBars /> */}
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
             <Nav

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { FaPencilRuler } from 'react-icons/fa';
-import { GiShop } from 'react-icons/gi';
+// import { FaPencilRuler } from 'react-icons/fa';
+// import { GiShop } from 'react-icons/gi';
 
 
 const TheHeadFirst: React.FC = () => {
@@ -35,7 +35,7 @@ const TheHeadFirst: React.FC = () => {
                             </p>
                             <div className="buttons">
                                 <div className="main-button mx-auto">
-                                    <a href="https://youtube.com/templatemo" target="_blank"><GiShop size={20} />เลือกแพ็กเกจ</a>
+                                    {/* <a href="https://youtube.com/templatemo" target="_blank"><GiShop size={20} />เลือกแพ็กเกจ</a> */}
                                 </div>
                                 {/* <div className="main-button ms-1">
                                     <a href="https://youtube.com/templatemo" target="_blank"><GiShop size={20} />ระบบร้านค้าเต็มรูปแบบ</a>
