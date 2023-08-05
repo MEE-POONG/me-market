@@ -5,7 +5,7 @@ import TheLayout from '@/components/TheLayout'
 // import Categories from '@/container/Home/Categories'
 // import Price from '@/container/Home/Price'
 // import Currently from '@/container/Home/Currently'
-const HomePage: React.FC = () => {
+const AboutPage: React.FC = () => {
   const { currentLanguage } = useContext(LanguageContext);
 
   return (
@@ -25,4 +25,4 @@ const HomePage: React.FC = () => {
     </TheLayout>
   )
 }
-export default HomePage;
+export default AboutPage;
